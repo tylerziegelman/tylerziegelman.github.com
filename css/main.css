@@ -1,0 +1,285 @@
+/*** colors #333(gray), #009FDF(blue), #1ebcff(blue), 240,144,35 red #ff1d5d***/
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Work Sans Light'), local('WorkSans-Light'), url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh314L8mNhI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'), url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh3o4T8mNhI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Work Sans Black'), local('WorkSans-Black'), url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh3_4f8mNhI.ttf) format('truetype');
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+/**** Menu Styles ****/
+.menuWrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+  background-color: rgb(50,50,50);
+  border-bottom: 2px solid black;
+  box-shadow: 0px 1px 3px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 80px;
+  
+}
+.homeLink {
+  
+}
+
+ul {
+	padding-right: 60px;
+	padding-top: 10px;
+}
+li {
+  font-family: 'Work Sans', Arial;
+  letter-spacing: -2px;
+  list-style: none;
+  font-size: 1.6em;
+  float: right;
+  margin-left: 20px;
+ 
+  
+}
+.menuLIs {
+  position: relative;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+/**** Add underline effect to menu items ****/
+.menuLIs:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -3px;
+  left: 0;
+  background: linear-gradient(to right, #ff1d5d, #1EBCFF);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.menuLIs:hover {
+  color: #1EBCFF;
+  font-weight: 600;
+}
+.menuLIs:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+li:active {
+  transform: scale(0.95);
+}
+/**** First Section div ****/
+.me_div {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+	align-items: center;
+  justify-content: center;
+}
+.social {
+  flex-wrap: nowrap;
+  width: 20%;
+  height: 8%;
+ 
+  
+  
+  
+}
+.social i {
+  font-size: 4vw;
+  color: #FFF;
+  -webkit-text-stroke: 1.5px black;
+  margin-left: 10px;
+ 
+}
+.social i:hover {
+  color: #FF1D5D;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.social i:active {
+  color: #1ebcff;
+  transform: scale(0.9);
+}
+.nameDiv {
+  width:35%;
+  text-align: center;
+  font-size: 3.8vw;
+  font-family: 'Work Sans', Arial;
+  margin: 0 auto;
+  color: #000;
+}
+.nameDiv h1 {
+  font-weight: 600;
+  letter-spacing: -6;
+  text-align: left;
+  line-height: 0.9;
+
+}
+
+.name {
+	margin-top: -50px;
+}
+.last {
+	border-bottom: 20px solid transparent;
+    box-shadow: 0px 4px 0px black;
+}
+
+/**** Hide and Show content on icon click ****/
+#contentEmail,
+#contentPhone {
+  display: none;
+}
+#showEmail:target #contentEmail,
+#showPhone:target #contentPhone {
+  margin-top: -45px;
+  -webkit-text-stroke: 0;
+  font-size: 0.5em;
+	display: block;
+  
+}
+#showEmail:target #openEmail,
+#showPhone:target #openPhone {
+  display: none;
+}
+
+hr {
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+
+/**** Second Section DIV ****/
+.aboutDiv {
+  height: 110%;
+  width: 100%;
+  background: #1EBCFF;
+  border-top: 4px solid #f0f0f0;
+  box-shadow: 0px -1px 1px #777;
+  
+}
+.aboutTitle {
+  font-family: 'Work Sans', Arial;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  font-weight: 600;
+  margin-top: 3%;
+  
+}
+.self-description {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Work Sans', Arial;
+  font-size: 2em;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0px 1px 1px black;
+}
+
+.aboutFlexWrap {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.photoDiv {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 4px solid black;
+	background: url('../images/test.jpg') no-repeat;
+	background-size: 170%;
+	background-position: center left;
+	transform: rotate(180deg);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 10px;
+	z-index: 10;
+}
+
+.photoHR {
+	margin-top: 130px;
+	height: 40px;
+	border: 4px solid black;
+	transform: rotate(90deg);
+	
+}
+
+hr#hrRight {
+	
+	margin-right: 104px;
+}
+
+hr#hrLeft {
+	margin-left: 104px;
+}
+
+
+
+/**** Footer Styles ****/
+footer {
+  height: 20%;
+  border-top: 3px solid black;
+}
+
+.footerUL {
+	display: flex;
+	flex-direction: column;
+	width: 38%;
+	justify-content: space-between;
+}
+
+.footerMenu {
+	font-size: 1.2em;
+	color: #333;
+	letter-spacing: 0.8;
+	padding-right: 10px;
+	float: left;
+
+}
+
+.footerMenu:hover {
+	opacity: 0.7; 
+}
+
+/**** Media Queries ****/
+@media only screen and (max-width: 890px) {
+  .name {
+    
+  }
+}
