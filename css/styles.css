@@ -1,0 +1,339 @@
+/* @blue: #1EBCFF;
+@red: #FF1D5D;
+@gray: #333;
+@font-stack: 'Work Sans', Arial; */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900');
+
+/**** overrides for UIkit ****/
+*+.uk-margin {
+    margin-top: -100px!important;
+}
+/**** Universal styles ****/
+* {
+    font-family: 'Work sans', arial;
+}
+
+
+
+/*** off canvas menu styles ***/
+.main-wrapper {
+    background: url("../images/bgMTN.jpg") no-repeat; 
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+}
+
+.fa-bars {
+    outline: none;
+    font-size: 3em;
+    border: none;
+    color: #fff;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 2.1px 3.8px 0.5px black;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.fa-times {
+    border: none;
+}
+
+.fa-bars:hover {
+    text-shadow: 2.1px 3.8px 0.5px #1EBCFF;
+}
+
+.fa-bars:active {
+    text-shadow: 5.1px 4.8px 0px #1EBCFF, -8.1px -4.8px 0px #FF1D5D;
+
+}
+
+.uk-offcanvas-bar {
+    background: rgba(255,255,255,0.6);
+    border-right: 4px solid black;
+    width: 100%;
+   
+}
+
+.uk-offcanvas-bar .uk-nav-primary li a{
+    width: 4em;
+    margin: 0 auto; 
+    color: #fff;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    font-size: 3em;
+    
+}
+
+
+.uk-offcanvas-bar .uk-nav-primary li a:before  {
+    
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    margin-top: 55px;
+    background: linear-gradient(to right, #ff1d5d, #1EBCFF);
+    visibility: hidden; 
+   -webkit-transform: scaleX(0);
+   transform: scaleX(0);
+   -webkit-transition: all 0.5s ease-in-out 0s;
+   transition: all 0.5s ease-in-out 0s;
+     
+ }
+ 
+ 
+ .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+   
+   visibility: visible;
+   -webkit-transform: scaleX(0.08);
+   transform: scaleX(0.08);
+     
+ }
+
+ .uk-offcanvas-bar .uk-nav-primary li a:hover {
+     color: #000;
+     text-shadow: -2px -2px 0px #1EBCFF, 2px 2px 0px #FF1D5D;
+ }
+
+ .uk-offcanvas-bar .uk-nav-primary li a:active {
+     color: #333;
+     text-shadow: -2px -2px 2px #1EBCFF, 2px 2px 2px #FF1D5D;
+ }
+ 
+ li:active {
+     transform: scale(0.95);
+ }
+ .uk-offcanvas-bar .uk-button-default{
+     color: #fff;
+     width: 100px;
+     -webkit-text-stroke: 2px black;
+     font-size: 3em;
+     text-shadow: 2.1px 3.8px 0.5px black;
+     margin-left: 90%;
+ }
+
+ .uk-offcanvas-bar .uk-button-default:hover {
+    text-shadow: 2.1px 3.8px 0.5px #1EBCFF;
+ }
+
+ .uk-offcanvas-bar .uk-button-default:active {
+    text-shadow: 5.1px 4.8px 0px #1EBCFF, -8.1px -4.8px 0px #FF1D5D;
+ }
+
+ /*** Main page elements styles ***/
+
+ .landing-div {
+    position: absolute;
+    height: 100%;
+    
+    left: 50%;
+    top: 50%;
+  
+    transform: translate(-50%, -50%);
+    
+ }
+
+ .uk-heading-hero {
+     font-weight: 600;
+     
+ }
+
+ .nameLast, .nameFirst {
+     margin: 0 auto;
+     color: #111;
+     text-shadow: 1px 1px 0px #1EBCFF, -1px -1px #FF1D5D;
+    
+	 font-family: 'work sans', arial;
+	 letter-spacing: -6;
+   
+ }
+
+ .nameLast {
+   
+     
+ }
+
+.nameWrapper {
+    margin-top: 20%;
+    
+}
+
+
+/**** Contact Icons styles ****/
+.social {
+  margin-top: -28px;
+  
+}
+.social a{
+    font-size: 4em;
+    color: rgba(255,255,255,0.8);
+    -webkit-text-stroke: 1.6px #000;
+   
+}
+#socialTopRow {
+    text-align: right;
+    
+}
+
+#socialTopRow a{
+   margin-right: 2.5px;
+}
+
+#socialBottomRow {
+    padding-left: 0;
+}
+#socialBottomRow a {
+    margin-left: 2.5px;
+}
+
+.social a:hover {
+    color: #1EBCFF;
+    text-shadow: 2px 1.5px #333;
+}
+
+.social a:active {
+    color: #FF1D5D;
+    text-shadow: 2px 1.5px #333, -2px -1.5px #1EBCFF;
+}
+
+/**** Name and Email stylings ****/
+.contact p {
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #000;
+    
+}
+
+p {
+        margin-bottom: -10px;   
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    
+}
+.contact {
+    margin-left: 28px; 
+    position: absolute;
+    margin-bottom: -100px;
+    width: 100%;
+    text-align: center;
+}
+
+/**** Media Queries ****/
+
+@media only screen and (max-width: 1665px) {
+    .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+        -webkit-transform: scaleX(0.1);
+        transform: scaleX(0.1);
+          
+      }
+} 
+
+@media only screen and (max-width: 1333px) {
+    .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+        -webkit-transform: scaleX(0.15);
+        transform: scaleX(0.15);
+          
+      }
+}
+
+@media only screen and (max-width: 917px) {
+    .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+          
+      }
+}
+
+@media only screen and (max-width: 574px) {
+    .uk-offcanvas-bar .uk-button-default {
+        margin-left: 75%;
+    }
+}
+
+@media only screen and (max-height: 420px) {
+	.main-wrapper {
+		height: 100%;
+	}
+	
+
+}
+
+
+@media only screen and (max-height: 605px) {
+    .divider {
+        display: none;
+    }
+	.name-wrapper {
+		margin-top: -100px;
+    }
+    
+    .social {
+        margin-top: 20px;
+    }
+	.social a {
+		font-size: 2.5em;
+	}
+	
+	.dividerBottom {
+		display: none;
+	}
+	
+	.contact p {
+        margin-top: 70px;
+		
+		
+	}
+}
+
+
+.divider {
+    border: 2px solid black;
+}
+
+.dividerBottom {
+    border-bottom: 2px solid black;
+    margin-top: 75px;
+   
+
+    
+}
+
+.about {
+    width: 100%;
+    height: 90%;
+    background-color: rgb(250,250,250);
+    border-top: 4px solid black;
+}
+
+.aboutH1 {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 3.5em;
+    font-weight: 800;
+    text-align: center;
+    color: #FFF;
+    background: #FF1D5D;
+    -webkit-text-stroke: 2px black;
+    box-shadow: 2px 2px 0px yellow, -2px -2px 2px black;
+    text-shadow: 2px 2px 0px #1EBCFF;
+}
+
+.me-picture {
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: url("../images/me.jpg");
+    background-size: 174%;
+    transform: rotate(180deg);
+    margin-top: 50px;
+    
+    
+}
+

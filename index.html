@@ -1,71 +1,71 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		
-    </head>
-    <body>
-		<div class="menuWrapper">
-			<ul>
-			<li class="menu"><a href="#about" class="menuLIs">About</a></li>
-			<li class="menu"><a href="#" class="menuLIs">Work</a></li>
-			<li class="menu homeLink"><a href="#" class="menuLIs">Home</a></li>
-			</ul>
-		</div>
+<head>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+</head>
 
-	<div class="me_div">
-		<div class="nameDiv">
-			<h1 class="name">Tyler</h1>
-			<h1 class="name last">Ziegelman</h1>
-			
-	<div id="showEmail">
-    	<span id="contentEmail">
-			
-			TylerZiegelman@gmail.com
-			<hr>
-			<a href="#hideEmail" id="closeEmail"></a>
-		</span>
-	
-		</div>
-		<div id="showPhone">
-    	<span id="contentPhone">
-			(701)320-2361
-			<hr>
-			<a href="#hidePhone" id="closePhone"></a>
-		</span>
-	
-		</div>
-		
-		</div>
-		<div class="social">
-			<a href="#showEmail" class="open"><i class="fas fa-envelope-square"></i></a>
-			<a href="#showPhone" class="open"><i class="fas fa-phone-square"></i></a>
-			<a href="https://github.com/tylerziegelman"><i class="fab fa-github-square"></i></a>
-			<a href=https://www.linkedin.com/in/tyler-ziegelman-115668123><i class="fab fa-linkedin"></i></a>
-		</div>
-		
-		</div>
-		
-		<div id="about" class="aboutDiv">
-			<h1 class="aboutTitle">Who Am I?</h1>
-			
-			<p class="self-description">I'm a Minnesota Twins fan, willing to watch and endure our many losses. I own a weirdly long cat and have aspirations of backpacking the Incan Trail<br><br>My personal interest include guitars, coffee, hiking, and computers.</p>
-			<div class="aboutFlexWrap"><hr id="hrLeft" class="photoHR"><div class="photoDiv"></div><hr id="hrRight" class="photoHR">
-			</div>
-		</div>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+<body>
+<div class="main-wrapper uk-flex uk-flex-column .uk-flex-nowrap">
+ <div class="uk-offcanvas-content ">
+    <span id="menu" class="fas fa-bars uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary"></span>
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <span id="closeMenu" class="fas fa-times uk-button uk-button-default uk-margin-large-right" type="button" uk-toggle="target: #offcanvas-nav-primary"></span>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                
+                <li class="uk-link-text"><a href="#">Home</a>
+                <li class="uk-link-text"><a href="#">About</a>
+                <li class="uk-link-text"><a href="#">Work</a>
+            </ul>
 
-		
-		<footer class="footer">
-			
-				<ul class="footerUL">
-					<a href="#"><li class="footerMenu">github</li></a>
-					<a href="#"><li class="footerMenu">LinkedIn</li></a>
-					<a href="#"><li class="footerMenu">Phone: 701-320-2361</li></a>
-					<a href="#"><li class="footerMenu">Email: TylerZiegelman@gmail.com</li></a>
-				</ul>
-			
-		</footer>
-		
-    </body>
-	
+        </div>
+    </div>
+    
+</div>
+
+<div id="blur" class="landing-div uk-flex-column" uk-grid>
+    <div class="nameWrapper">
+        <h1 class="uk-heading-hero uk-flex-first nameFirst">Tyler</h1>
+        <h1 class="uk-heading-hero nameLast">Ziegelman</h1>
+        
+        <hr class="divider">
+        <hr class="divider dividerBottom">
+    </div>
+    <div class="socialIconsWrapper uk-grid">
+    
+    <div id="socialTopRow"  class="social uk-width-1-2" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+            <a href="#" class="open"><span class="fas fa-envelope-square" uk-tooltip="title: Email; pos: bottom"></span></a>
+			<a href="#" class="open"><span class="fas fa-phone-square" uk-tooltip="title: Phone Number; pos: bottom"></span></a>
+    </div>
+    <div id="socialBottomRow" class="social">
+			<a href="https://github.com/tylerziegelman"><span class="fab fa-github-square" uk-tooltip="title: Github; pos: bottom"></span></a>
+			<a href="https://www.linkedin.com/in/tyler-ziegelman-115668123"><span class="fab fa-linkedin" uk-tooltip="title: LinkedIn; pos: bottom"></span></a>
+	</div>
+     
+    <div class="contact uk-switcher uk-margin">
+        <p>TylerZiegelman@gmail.com</p>
+        <p>(701)320-2361</p>
+        
+    </div>
+    
+    </div>
+    
+</div>
+    
+
+</div>
+	 <div class="about">
+        <h1 class="aboutH1">Who Am I?</h1>
+        <div class="me-picture"></div>
+     </div>
+     <script src="js/main.js">
+        
+     </script>
+</body>
 </html>
