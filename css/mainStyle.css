@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900");
 /**** overrides for UIkit ****/
 * + .uk-margin {
@@ -14,8 +15,7 @@
   background: url("../images/bgMTN.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80%;
-  min-height: 537px;
+  min-height: 93%;
 }
 
 .fa-bars {
@@ -259,8 +259,7 @@ p {
 
 .about {
   width: 100%;
-  height: 60%;
-  min-height: 350px;
+  display: flex;
   background-color: #333;
   border-bottom: 3px solid white;
   border-top: 4px solid black;
@@ -274,64 +273,25 @@ p {
   font-weight: 800;
   text-align: center;
   color: #fff;
-  background: linear-gradient(55deg, #1ebcff, #FF1D5D);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
-  -webkit-text-stroke: 2px black;
-  box-shadow: 2px 2px 0px yellow, -2px -2px 2px black;
-  text-shadow: 2px 2px 0px #1ebcff;
-}
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 71%;
-  }
-  50% {
-    background-position: 100% 30%;
-  }
-  100% {
-    background-position: 0% 71%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 71%;
-  }
-  50% {
-    background-position: 100% 30%;
-  }
-  100% {
-    background-position: 0% 71%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 71%;
-  }
-  50% {
-    background-position: 100% 30%;
-  }
-  100% {
-    background-position: 0% 71%;
-  }
 }
 
 .me-picture {
-  width: 300px;
+  width: 250px;
   height: 300px;
-  border-radius: 50%;
-  border: 3px solid white;
-  background: url("../images/me.jpg");
-  background-size: 174%;
-  transform: rotate(180deg);
-  margin: 0 auto;
-  margin-top: 150px;
+  background: url("../images/me.svg");
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.aboutSVGOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 330px;
+  margin-top: 50px;
 }
 
 .fun-facts, .interests {
   color: #fff;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 1.5px 2px #000;
 }
 
 ul {
@@ -348,10 +308,41 @@ ul {
 }
 
 .fun-facts {
-  float: left;
-  margin-top: -450px;
-  margin-left: 10%;
-  width: 250px;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 65%;
+  padding: 15px 15px;
+}
+
+.fun-facts span {
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(60deg, #FF1D5D, #1ebcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  -webkit-animation: hue 15s ease infinite;
+  background-size: 600% 600%;
+}
+
+@-webkit-keyframes hue {
+  0% {
+    background-position: 0% 71%;
+  }
+  50% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 0% 71%;
+  }
+}
+.fun-facts p:nth-child(1) {
+  font-size: 2em;
 }
 
 .interests {
@@ -362,8 +353,65 @@ ul {
 
 .workExp {
   width: 100%;
-  height: 100%;
-  background-color: #aaa;
+  background: #1ebcff;
+}
+
+.workAccordian {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px black;
+  padding: 10px 20px;
+}
+
+.uk-accordion-title h2 {
+  color: #fff;
+  border-bottom: 2px solid black;
+  width: 150%;
+}
+
+.educationDiv {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black, -0.5px -0.5px 0px black;
+}
+
+.educationDiv h2, .educationDiv h3 {
+  color: #fff;
+}
+
+.educationDiv h2 {
+  margin-bottom: -20px;
+  font-weight: 700;
+}
+
+.workExpH1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #FFF;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px black, -0.5px -0.5px 0px black;
+}
+
+.uk-accordion-title::before, .uk-open > .uk-accordion-title::before {
+  background-image: none;
+}
+
+.uk-open > .uk-accordion-title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+}
+
+.fa-plus-square:before {
+  margin-left: -20px;
+  margin-top: 15px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
