@@ -1,7 +1,7 @@
-/* @blue: #1EBCFF;
-@red: #FF1D5D;
-@gray: #333;
-@font-stack: 'Work Sans', Arial; */
+$blue: #1ebcff;
+$red: #FF1D5D;
+$gray: #333;
+$font-stack: 'Work Sans', Arial; 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900');
 
 /**** overrides for UIkit ****/
@@ -10,7 +10,7 @@
 }
 /**** Universal styles ****/
 * {
-    font-family: 'Work sans', arial;
+    font-family: $font-stack;
 }
 
 
@@ -21,6 +21,7 @@
     background-position: center;
     background-size: cover;
     height: 80%;
+    min-height: 537px;
 }
 
 .fa-bars {
@@ -39,11 +40,11 @@
 }
 
 .fa-bars:hover {
-    text-shadow: 2.1px 3.8px 0.5px #1EBCFF;
+    text-shadow: 2.1px 3.8px 0.5px $blue;
 }
 
 .fa-bars:active {
-    text-shadow: 5.1px 4.8px 0px #1EBCFF, -8.1px -4.8px 0px #FF1D5D;
+    text-shadow: 5.1px 4.8px 0px $blue, -8.1px -4.8px 0px $red;
 
 }
 
@@ -73,7 +74,7 @@
     width: 100%;
     height: 5px;
     margin-top: 55px;
-    background: linear-gradient(to right, #ff1d5d, #1EBCFF);
+    background: linear-gradient(to right, $red, $blue);
     visibility: hidden; 
    -webkit-transform: scaleX(0);
    transform: scaleX(0);
@@ -93,12 +94,12 @@
 
  .uk-offcanvas-bar .uk-nav-primary li a:hover {
      color: #000;
-     text-shadow: -2px -2px 0px #1EBCFF, 2px 2px 0px #FF1D5D;
+     text-shadow: -2px -2px 0px $blue, 2px 2px 0px $red;
  }
 
  .uk-offcanvas-bar .uk-nav-primary li a:active {
      color: #333;
-     text-shadow: -2px -2px 2px #1EBCFF, 2px 2px 2px #FF1D5D;
+     text-shadow: -2px -2px 2px $blue, 2px 2px 2px $red;
  }
  
  li:active {
@@ -114,11 +115,11 @@
  }
 
  .uk-offcanvas-bar .uk-button-default:hover {
-    text-shadow: 2.1px 3.8px 0.5px #1EBCFF;
+    text-shadow: 2.1px 3.8px 0.5px $blue;
  }
 
  .uk-offcanvas-bar .uk-button-default:active {
-    text-shadow: 5.1px 4.8px 0px #1EBCFF, -8.1px -4.8px 0px #FF1D5D;
+    text-shadow: 5.1px 4.8px 0px $blue, -8.1px -4.8px 0px $red;
  }
 
  /*** Main page elements styles ***/
@@ -142,9 +143,9 @@
  .nameLast, .nameFirst {
      margin: 0 auto;
      color: #111;
-     text-shadow: 1px 1px 0px #1EBCFF, -1px -1px #FF1D5D;
+     text-shadow: 1px 1px 0px $blue, -1px -1px $red;
     
-	 font-family: 'work sans', arial;
+	 font-family: $font-stack;
 	 letter-spacing: -6;
    
  }
@@ -155,7 +156,7 @@
  }
 
 .nameWrapper {
-    margin-top: 20%;
+    margin-top: 10%;
     
 }
 
@@ -188,13 +189,13 @@
 }
 
 .social a:hover {
-    color: #1EBCFF;
+    color: $blue;
     text-shadow: 2px 1.5px #333;
 }
 
 .social a:active {
-    color: #FF1D5D;
-    text-shadow: 2px 1.5px #333, -2px -1.5px #1EBCFF;
+    color: $red;
+    text-shadow: 2px 1.5px #333, -2px -1.5px $blue;
 }
 
 /**** Name and Email stylings ****/
@@ -304,8 +305,10 @@ p {
 
 .about {
     width: 100%;
-    height: 90%;
-    background-color: rgb(250,250,250);
+    height: 60%;
+    min-height: 350px;
+    background-color: #333;
+    border-bottom: 3px solid white;
     border-top: 4px solid black;
 }
 
@@ -316,24 +319,93 @@ p {
     font-size: 3.5em;
     font-weight: 800;
     text-align: center;
-    color: #FFF;
-    background: #FF1D5D;
+    color: #fff;
+    background: linear-gradient(55deg, $blue,$red);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 15s ease infinite;
+-moz-animation: AnimationName 15s ease infinite;
+animation: AnimationName 15s ease infinite;
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
     -webkit-text-stroke: 2px black;
     box-shadow: 2px 2px 0px yellow, -2px -2px 2px black;
-    text-shadow: 2px 2px 0px #1EBCFF;
+    text-shadow: 2px 2px 0px $blue;
 }
 
 .me-picture {
     width: 300px;
     height: 300px;
-    border: 4px solid black;
     border-radius: 50%;
-    margin: 0 auto;
+    border: 3px solid white;
     background: url("../images/me.jpg");
     background-size: 174%;
     transform: rotate(180deg);
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 150px;
+    
     
     
 }
 
+.facts-wrap {
+ 
+    
+}
+
+.facts-wrap .fun-facts {
+   
+}
+
+.fun-facts, .interests {
+   color: #fff;
+   text-shadow: 2px 2px 2px black;
+}
+ul {
+    list-style: none;
+}
+
+.fun-facts h1, .interests h1 {
+    text-shadow: 1px 1px 0px $red, -1px 1px 0px $blue;
+    -webkit-text-stroke: 2px black;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid white;
+    
+    text-align: center;
+}
+.fun-facts {
+    float: left;
+    margin-top: -450px;
+    margin-left: 10%;
+    width: 250px;
+
+}
+.interests {
+    margin-top: -450px;
+    margin-right: 10%;
+    float: right;
+}
+
+.workExp {
+    width: 100%;
+    height: 100%;
+    background-color: #aaa;
+   
+
+}
