@@ -353,7 +353,7 @@ ul {
 
 .workExp {
   width: 100%;
-  background: #1ebcff;
+  background: url("../images/chalkboard.jpg");
 }
 
 .workAccordian {
@@ -368,7 +368,7 @@ ul {
 
 .uk-accordion-title h2 {
   color: #fff;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ffff75;
   width: 150%;
 }
 
@@ -395,7 +395,8 @@ ul {
   padding-top: 50px;
   color: #FFF;
   font-weight: 700;
-  text-shadow: 2px 2px 2px black, -0.5px -0.5px 0px black;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 2px 2px 2px #000, -0.5px -0.5px 0px #000;
 }
 
 .uk-accordion-title::before, .uk-open > .uk-accordion-title::before {
@@ -412,6 +413,12 @@ ul {
   margin-left: -20px;
   margin-top: 15px;
   color: #fff;
+}
+
+footer {
+  border-top: 2px solid #FF1D5D;
+  outline: 1px solid #1ebcff;
+  height: 100px;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
