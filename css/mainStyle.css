@@ -115,11 +115,7 @@ li:active {
 
 /*** Main page elements styles ***/
 .landing-div {
-  position: absolute;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .uk-heading-hero {
@@ -187,8 +183,6 @@ li:active {
 }
 
 p {
-  margin-bottom: -10px;
-  display: block;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -196,9 +190,10 @@ p {
 }
 
 .contact {
-  margin-left: 28px;
   position: absolute;
-  margin-bottom: -100px;
+  left: 100;
+  right: 0px;
+  margin-top: -100px;
   width: 100%;
   text-align: center;
 }
