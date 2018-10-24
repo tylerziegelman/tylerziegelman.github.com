@@ -4,6 +4,10 @@ $gray: #333;
 $font-stack: 'Work Sans', Arial; 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900');
 
+html, body {
+    height: 100%;
+}
+
 /**** overrides for UIkit ****/
 *+.uk-margin {
     margin-top: -100px!important;
@@ -55,6 +59,8 @@ $font-stack: 'Work Sans', Arial;
    
 }
 
+
+
 .uk-offcanvas-bar .uk-nav-primary li a{
     width: 4em;
     margin: 0 auto; 
@@ -62,12 +68,11 @@ $font-stack: 'Work Sans', Arial;
     font-weight: 900;
     -webkit-text-stroke: 2px black;
     font-size: 3em;
-    
+    border: none;
 }
 
 
 .uk-offcanvas-bar .uk-nav-primary li a:before  {
-    
     content: "";
     position: absolute;
     left: 0;
@@ -85,12 +90,10 @@ $font-stack: 'Work Sans', Arial;
  
  
  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
-   
    visibility: visible;
    -webkit-transform: scaleX(0.08);
    transform: scaleX(0.08);
-     
- }
+}
 
  .uk-offcanvas-bar .uk-nav-primary li a:hover {
      color: #000;
@@ -127,10 +130,8 @@ $font-stack: 'Work Sans', Arial;
  .landing-div {
     position: absolute;
     height: 100%;
-    
     left: 50%;
     top: 50%;
-  
     transform: translate(-50%, -50%);
     
  }
@@ -150,16 +151,10 @@ $font-stack: 'Work Sans', Arial;
    
  }
 
- .nameLast {
-   
-     
- }
-
 .nameWrapper {
     margin-top: 10%;
     
 }
-
 
 /**** Contact Icons styles ****/
 .social {
@@ -198,6 +193,10 @@ $font-stack: 'Work Sans', Arial;
     text-shadow: 2px 1.5px #333, -2px -1.5px $blue;
 }
 
+.clickToCall {
+    text-decoration: underline;
+}
+
 /**** Name and Email stylings ****/
 .contact p {
     font-weight: 400;
@@ -213,7 +212,6 @@ p {
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-    
 }
 .contact {
     margin-left: 28px; 
@@ -223,6 +221,276 @@ p {
     text-align: center;
 }
 
+.divider {
+    border: 2px solid black;
+}
+
+.dividerBottom {
+    border-bottom: 2px solid black;
+    margin-top: 75px;
+}
+
+/**** About Div Styles ****/
+.about {
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    border-bottom: 3px solid white;
+    border-top: 4px solid black;
+}
+
+.aboutH1 {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 3.5em;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+.me-picture {
+    width: 250px;
+    height: 300px;
+    background: url("../images/me.svg");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.aboutSVGOverlay{
+    background: rgba(0,0,0,0.5);
+    height: 330px;
+    margin-top: 50px;
+}
+
+.fun-facts, .interests {
+   color: #fff;
+   text-shadow:2px 1.5px 2px #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.fun-facts h1, .interests h1 {
+    text-shadow: 1px 1px 0px $red, -1px 1px 0px $blue;
+    -webkit-text-stroke: 2px black;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.fun-facts {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom:50px;
+    background-color: rgba(0,0,0,0.3);
+    width: 65%;
+    padding: 15px 15px;
+}
+
+.fun-facts span {
+    font-size: 1.5em;
+    text-align: center;
+	color: #fff;
+	background-image: linear-gradient(60deg,$red,$blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    //-webkit-animation: hue 1s infinite linear;
+    text-shadow: none;
+    -webkit-animation: hue 15s ease infinite;
+    background-size: 600% 600%;
+}
+
+@-webkit-keyframes hue {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+
+.fun-facts p:nth-child(1){
+    font-size: 2em;
+}
+
+.interests {
+    margin-top: -450px;
+    margin-right: 10%;
+    float: right;
+}
+
+/**** Work Experience Styles ****/
+.workExp {
+    width: 100%;
+    background: url('../images/chalkboard.jpg');
+}
+
+.workAccordian{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px black;
+    padding: 10px 20px;
+}
+
+.uk-accordion-title h2{
+    color: #fff;
+    border-bottom: 2px solid rgb(255, 255, 117);
+    width: 150%;
+}
+
+.educationDiv {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black,-0.5px -0.5px 0px black;
+}
+
+.educationDiv h2, .educationDiv h3 {
+    color: #fff;
+}
+
+.educationDiv h2 {
+    margin-bottom: -20px;
+    font-weight: 700;
+}
+
+.workExpH1 {
+    text-align: center;
+    padding-top: 50px;
+    color: #FFF;
+    font-weight: 700;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 2px #000,-0.5px -0.5px 0px #000;
+}
+.uk-accordion-title::before,.uk-open>.uk-accordion-title::before {
+    background-image: none;
+}
+
+.uk-open>.uk-accordion-title::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f146";
+}
+
+.fa-plus-square:before {
+    margin-left: -20px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+/**** Footer styles ****/
+footer {
+    border-top: 2px solid $red;
+    height: 100px;
+    padding-left: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+
+footer span {
+    color: #333;
+}
+
+
+footer a {
+    color: #555;
+}
+
+footer label {
+    color: #000;
+}
+
+.footerEmailAndPhoneDiv {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 50px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footerEmailAndPhoneDiv a {
+    border-bottom: 1px solid #333;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: $red;
+}
+
+.footerSocialDiv {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 200px;
+    padding-right: 50px;
+    font-weight: 400;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footerSocialDiv .fab {
+    line-height: 1.5;
+    border-bottom: 1px solid #333;
+}
+
+
+.tz-logo {
+    height: 100px;
+    margin-top: 20px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+/**** Skills Div Styles ****/
+.skills {
+    background: url('../images/fog.jpg');
+    background-size: cover;
+    border-top: 3px solid white;
+    box-shadow: 2px 3px 5px black;
+  
+}
+
+.skills h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.uk-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: rgba(255,255,255,.1);
+    -webkit-text-stroke: 1px black;
+    background: rgba(200,200,200, 0.5);
+}
+
+.skills .uk-grid>*>:last-child {
+     margin-bottom: 50px;
+     border: 2px solid black;
+   
+}
+
+.skillsIcon {
+    font-size: 3em;
+   
+}
 /**** Media Queries ****/
 
 @media only screen and (max-width: 1665px) {
@@ -285,231 +553,5 @@ p {
 	
 	.contact p {
         margin-top: 70px;
-		
-		
 	}
-}
-
-
-.divider {
-    border: 2px solid black;
-}
-
-.dividerBottom {
-    border-bottom: 2px solid black;
-    margin-top: 75px;
-   
-
-    
-}
-
-.about {
-    width: 100%;
-    display: flex;
-    background-color: #333;
-    border-bottom: 3px solid white;
-    border-top: 4px solid black;
-}
-
-.aboutH1 {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 50px;
-    font-size: 3.5em;
-    font-weight: 800;
-    text-align: center;
-    color: #fff;
-//     background: linear-gradient(55deg, $blue,$red);
-// background-size: 600% 600%;
-
-// -webkit-animation: AnimationName 15s ease infinite;
-// -moz-animation: AnimationName 15s ease infinite;
-// animation: AnimationName 15s ease infinite;
-
-
-// @-webkit-keyframes AnimationName {
-//     0%{background-position:0% 71%}
-//     50%{background-position:100% 30%}
-//     100%{background-position:0% 71%}
-// }
-// @-moz-keyframes AnimationName {
-//     0%{background-position:0% 71%}
-//     50%{background-position:100% 30%}
-//     100%{background-position:0% 71%}
-// }
-// @keyframes AnimationName { 
-//     0%{background-position:0% 71%}
-//     50%{background-position:100% 30%}
-//     100%{background-position:0% 71%}
-// }
-//     -webkit-text-stroke: 2px black;
-//     box-shadow: 2px 2px 0px yellow, -2px -2px 2px black;
-//     text-shadow: 2px 2px 0px $blue;
-// }
-}
-.me-picture {
-    width: 250px;
-    height: 300px;
-    
-    
-    background: url("../images/me.svg");
-    background-repeat: no-repeat;
-    
-   
-   margin-top: 10px;
-    
-   
-    
-    
-    
-}
-
-.aboutSVGOverlay{
-    background: rgba(0,0,0,0.5);
-    height: 330px;
-    margin-top: 50px;
-}
-
-.facts-wrap {
- 
-    
-}
-
-.facts-wrap .fun-facts {
-   
-}
-
-.fun-facts, .interests {
-   color: #fff;
-   text-shadow:2px 1.5px 2px #000;
-}
-ul {
-    list-style: none;
-}
-
-.fun-facts h1, .interests h1 {
-    text-shadow: 1px 1px 0px $red, -1px 1px 0px $blue;
-    -webkit-text-stroke: 2px black;
-    font-weight: 700;
-    color: #fff;
-    border-bottom: 2px solid white;
-    
-    text-align: center;
-}
-.fun-facts {
-    font-size: 1.8em;
-    font-weight: 400;
-    margin-top: 50px;
-    margin-left: 5%;
-    margin-bottom:50px;
-    background-color: rgba(0,0,0,0.3);
-    width: 65%;
-    padding: 15px 15px;
-}
-
-.fun-facts span {
-    
-    font-size: 1.5em;
-    
-	text-align: center;
-	color: #fff;
-	background-image: linear-gradient(60deg,$red,$blue);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    //-webkit-animation: hue 1s infinite linear;
-    text-shadow: none;
-    -webkit-animation: hue 15s ease infinite;
-    background-size: 600% 600%;
-}
-
-@-webkit-keyframes hue {
-    0%{background-position:0% 71%}
-    50%{background-position:100% 30%}
-    100%{background-position:0% 71%}
-}
-
-.fun-facts p:nth-child(1){
-    font-size: 2em;
-}
-
-.interests {
-    margin-top: -450px;
-    margin-right: 10%;
-    float: right;
-}
-
-
-.workExp {
-    width: 100%;
-    
-   
-    background: url('../images/chalkboard.jpg');
-    
-}
-
-.workAccordian{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 30px;
-    color: #fff;
-    background-color: rgba(0,0,0,0.5);
-   
-    text-shadow: 1px 1px 1px black;
-    padding: 10px 20px;
-}
-
-.uk-accordion-title h2{
-    color: #fff;
-    border-bottom: 2px solid rgb(255, 255, 117);
-    width: 150%;
-    
-}
-
-.educationDiv {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 30px;
-    padding-bottom: 50px;
-    color: #fff;
-    text-shadow: 1px 1px 2px black,-0.5px -0.5px 0px black;
-}
-
-.educationDiv h2, .educationDiv h3 {
-    color: #fff;
-    
-}
-
-.educationDiv h2 {
-    margin-bottom: -20px;
-    
-    font-weight: 700;
-}
-
-.workExpH1 {
-    text-align: center;
-    padding-top: 50px;
-    color: #FFF;
-    font-weight: 700;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 2px 2px 2px #000,-0.5px -0.5px 0px #000;
-    
-}
-.uk-accordion-title::before,.uk-open>.uk-accordion-title::before {
-    background-image: none;
-}
-
-.uk-open>.uk-accordion-title::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f146";
-}
-.fa-plus-square:before {
-    margin-left: -20px;
-    margin-top: 15px;
-    color: #fff;
-}
-
-footer {
-    border-top: 2px solid $red;
-    outline: 1px solid $blue;
-   
-    height: 100px;
 }

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900");
+html, body {
+  height: 100%;
+}
+
 /**** overrides for UIkit ****/
 * + .uk-margin {
   margin-top: -100px !important;
@@ -54,6 +58,7 @@
   font-weight: 900;
   -webkit-text-stroke: 2px black;
   font-size: 3em;
+  border: none;
 }
 
 .uk-offcanvas-bar .uk-nav-primary li a:before {
@@ -170,6 +175,10 @@ li:active {
   text-shadow: 2px 1.5px #333, -2px -1.5px #1ebcff;
 }
 
+.clickToCall {
+  text-decoration: underline;
+}
+
 /**** Name and Email stylings ****/
 .contact p {
   font-weight: 400;
@@ -194,60 +203,6 @@ p {
   text-align: center;
 }
 
-/**** Media Queries ****/
-@media only screen and (max-width: 1665px) {
-  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
-    -webkit-transform: scaleX(0.1);
-    transform: scaleX(0.1);
-  }
-}
-@media only screen and (max-width: 1333px) {
-  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
-    -webkit-transform: scaleX(0.15);
-    transform: scaleX(0.15);
-  }
-}
-@media only screen and (max-width: 917px) {
-  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
-    -webkit-transform: scaleX(0.3);
-    transform: scaleX(0.3);
-  }
-}
-@media only screen and (max-width: 574px) {
-  .uk-offcanvas-bar .uk-button-default {
-    margin-left: 75%;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .main-wrapper {
-    height: 100%;
-  }
-}
-@media only screen and (max-height: 605px) {
-  .divider {
-    display: none;
-  }
-
-  .name-wrapper {
-    margin-top: -100px;
-  }
-
-  .social {
-    margin-top: 20px;
-  }
-
-  .social a {
-    font-size: 2.5em;
-  }
-
-  .dividerBottom {
-    display: none;
-  }
-
-  .contact p {
-    margin-top: 70px;
-  }
-}
 .divider {
   border: 2px solid black;
 }
@@ -257,6 +212,7 @@ p {
   margin-top: 75px;
 }
 
+/**** About Div Styles ****/
 .about {
   width: 100%;
   display: flex;
@@ -351,6 +307,7 @@ ul {
   float: right;
 }
 
+/**** Work Experience Styles ****/
 .workExp {
   width: 100%;
   background: url("../images/chalkboard.jpg");
@@ -415,10 +372,162 @@ ul {
   color: #fff;
 }
 
+/**** Footer styles ****/
 footer {
   border-top: 2px solid #FF1D5D;
-  outline: 1px solid #1ebcff;
   height: 100px;
+  padding-left: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+footer span {
+  color: #333;
+}
+
+footer a {
+  color: #555;
+}
+
+footer label {
+  color: #000;
+}
+
+.footerEmailAndPhoneDiv {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-left: 50px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.footerEmailAndPhoneDiv a {
+  border-bottom: 1px solid #333;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #FF1D5D;
+}
+
+.footerSocialDiv {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 200px;
+  padding-right: 50px;
+  font-weight: 400;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.footerSocialDiv .fab {
+  line-height: 1.5;
+  border-bottom: 1px solid #333;
+}
+
+.tz-logo {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+}
+
+/**** Skills Div Styles ****/
+.skills {
+  background: url("../images/fog.jpg");
+  background-size: cover;
+  border-top: 3px solid white;
+  box-shadow: 2px 3px 5px black;
+}
+
+.skills h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.uk-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  -webkit-text-stroke: 1px black;
+  background: rgba(200, 200, 200, 0.5);
+}
+
+.skills .uk-grid > * > :last-child {
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+
+.skillsIcon {
+  font-size: 3em;
+}
+
+/**** Media Queries ****/
+@media only screen and (max-width: 1665px) {
+  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+    -webkit-transform: scaleX(0.1);
+    transform: scaleX(0.1);
+  }
+}
+@media only screen and (max-width: 1333px) {
+  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+    -webkit-transform: scaleX(0.15);
+    transform: scaleX(0.15);
+  }
+}
+@media only screen and (max-width: 917px) {
+  .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
+    -webkit-transform: scaleX(0.3);
+    transform: scaleX(0.3);
+  }
+}
+@media only screen and (max-width: 574px) {
+  .uk-offcanvas-bar .uk-button-default {
+    margin-left: 75%;
+  }
+}
+@media only screen and (max-height: 420px) {
+  .main-wrapper {
+    height: 100%;
+  }
+}
+@media only screen and (max-height: 605px) {
+  .divider {
+    display: none;
+  }
+
+  .name-wrapper {
+    margin-top: -100px;
+  }
+
+  .social {
+    margin-top: 20px;
+  }
+
+  .social a {
+    font-size: 2.5em;
+  }
+
+  .dividerBottom {
+    display: none;
+  }
+
+  .contact p {
+    margin-top: 70px;
+  }
 }
 
 /*# sourceMappingURL=mainStyle.css.map */

@@ -1,146 +1,172 @@
+<!DOCTYPE html>
 <html>
 <head>
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/mainStyle.css">
-<link rel="stylesheet" href="css/aboutSVG.css">
-<link rel="stylesheet" href="css/workSVG.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/aboutSVG.css">
+    <link rel="stylesheet" href="css/workSVG.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
 </head>
-
-<!-- UIkit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
 <body>
-<div class="main-wrapper uk-flex uk-flex-column .uk-flex-nowrap">
- <div class="uk-offcanvas-content ">
-    <span id="menu" class="fas fa-bars uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary"></span>
-    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-            <span id="closeMenu" class="fas fa-times uk-button uk-button-default uk-margin-large-right" type="button" uk-toggle="target: #offcanvas-nav-primary"></span>
-            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                
-                <li class="uk-link-text"><a href="#">Home</a>
-                <li class="uk-link-text"><a href="#">About</a>
-                <li class="uk-link-text"><a href="#">Work</a>
-            </ul>
-
-        </div>
-    </div>
-    
-</div>
-
-<div id="blur" class="landing-div uk-flex-column" uk-grid>
-    <div class="nameWrapper">
-        <h1 class="uk-heading-hero uk-flex-first nameFirst">Tyler</h1>
-        <h1 class="uk-heading-hero nameLast">Ziegelman</h1>
-        
-        <hr class="divider">
-        <hr class="divider dividerBottom">
-    </div>
-    <div class="socialIconsWrapper uk-grid">
-    
-    <div id="socialTopRow"  class="social uk-width-1-2" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-            <a href="#" class="open"><span class="fas fa-envelope-square" uk-tooltip="title: Email; pos: bottom"></span></a>
-			<a href="#" class="open"><span class="fas fa-phone-square" uk-tooltip="title: Phone Number; pos: bottom"></span></a>
-    </div>
-    <div id="socialBottomRow" class="social">
-			<a href="https://github.com/tylerziegelman"><span class="fab fa-github-square" uk-tooltip="title: Github; pos: bottom"></span></a>
-			<a href="https://www.linkedin.com/in/tyler-ziegelman-115668123"><span class="fab fa-linkedin" uk-tooltip="title: LinkedIn; pos: bottom"></span></a>
-	</div>
-     
-    <div class="contact uk-switcher uk-margin">
-        <p>TylerZiegelman@gmail.com</p>
-        <p>(701)320-2361</p>
-        
-    </div>
-    
-    </div>
-    
-</div>
-    
-
-</div>
-	 <div class="about">
-       <!--- <h1 class="aboutH1">Who Am I?</h1>-->
-        
-       
-            <div class="fun-facts">
-                <p>Hello, I'm <span>Tyler.</span></p> <p>I own a weirdly long cat, am a die hard Green Bay Packers fan, 
-                and aspire to backpack the Incan Trail.</p>
-                <p>My interests are coffee, hiking, guitars, and
-                    pc hardware and games</p>
-            </div>
-            <div class="aboutSVGOverlay">
-            <div class="me-picture"></div>
-            </div>
-                <!-- <h1>Fun Facts!</h1>
-                    <ul>
-                    <li>I own an extra long cat 🐱</li>
-                    <li>My favorite sports team is the GB Packers 🏈</li>
-                    <li>Backpacking a 200mi+ long trail is on my bucketlist 🏕️</li>
-                    </ul> #}
-                
-            </div>
-            {# <div class="interests">
-                <h1>Interests</h1>
-                <ul>
-                    <li>Guitars</li>
-                    <li>Coffee</li>
-                    <li>Computer hardware</li>
-                    <li>The natural world</li>
+    <div class="main-wrapper uk-flex uk-flex-column .uk-flex-nowrap">
+    <div class="uk-offcanvas-content ">
+        <span id="menu" class="fas fa-bars uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary"></span>
+        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <span id="closeMenu" class="fas fa-times uk-button uk-button-default uk-margin-large-right" uk-toggle="target: #offcanvas-nav-primary"></span>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    
+                    <li class="uk-link-text"><a class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav-primary" uk-scroll href="#">Home</a>
+                    <li class="uk-link-text"><a class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav-primary" uk-scroll href="#about">About</a>
+                    <li class="uk-link-text"><a class="uk-button uk-button-default" uk-toggle="target: #offcanvas-nav-primary" uk-scroll href="#workExp">Work</a>
                 </ul>
-           
-            
-        </div> #}-->
+
+            </div>
+        </div>
         
-        
-     </div>
-     <div class="workExp">
-        <h1 class="workExpH1">Work Experience</h1>
-		 <div class="jobs-list">
-    <ul class="workAccordian" uk-accordion>
-        <li>
-        <a class="uk-accordion-title far fa-plus-square" href="#"><h2>Associate in Deliveries at Home Depot</h2></a>
-        <p>Bozeman, MT 12/2017 - present
-            <div class="uk-accordion-content">
-                 - In charge of preparing deliveries
-            <br> - Call customers to arrange delivery times and that orders are correct
-            <br> - Help customers get the right products for their projects
-            </div>
-        </li>
-    </ul>
-     <ul class="workAccordian" uk-accordion>
-        <li>
-        <a class="uk-accordion-title far fa-plus-square" href="#"><h2>Farm Manager at CIR Farms</h2></a>
-        <p>Jamestown, ND 2/2014-10/2017</p>
-            <div class="uk-accordion-content">
-                 - Responsible of day to day operations on a large scale farm
-            <br> - In charge of maintaining farm equipment
-            <br> - Managing time in order to make sure work gets done properly and effieciently
-            <br> - Operating all types of equipment including tractors, semi trucks, skidsteer, and self-propelled sprayer
-            <br> - Use of modern ag technologies and sofware
-            </div>
-        </li>
-    </ul>
-            <div class="educationDiv">
-                <h2>Education</h2>
-                <h3>North Dakota State University</h3>
-                <p>Fargo, ND 8/2010-8/2013</p>
-            </div>
     </div>
-       
-	</div>
-      <footer>
-          <ul>
-            <a href="www.google.com">Help<a>
-          </ul>
-      </footer> 
-   
-     <script src="js/main.js">
+<div id="blur" class="landing-div uk-flex-column" uk-grid>
+        <div class="nameWrapper">
+            <h1 class="uk-heading-hero uk-flex-first nameFirst">Tyler</h1>
+            <h1 class="uk-heading-hero nameLast">Ziegelman</h1>
+            
+            <hr class="divider">
+            <hr class="divider dividerBottom">
+        </div>
+        <div class="socialIconsWrapper uk-grid">
         
-     </script>
+        <div id="socialTopRow"  class="social uk-width-1-2" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+                <a href="#" class="open"><span class="fas fa-envelope-square" uk-tooltip="title: Email; pos: bottom"></span></a>
+                <a href="#" class="open"><span class="fas fa-phone-square" uk-tooltip="title: Phone Number; pos: bottom"></span></a>
+        </div>
+        <div id="socialBottomRow" class="social">
+                <a href="https://github.com/tylerziegelman"><span class="fab fa-github-square" uk-tooltip="title: Github; pos: bottom"></span></a>
+                <a href="https://www.linkedin.com/in/tyler-ziegelman-115668123"><span class="fab fa-linkedin" uk-tooltip="title: LinkedIn; pos: bottom"></span></a>
+        </div>
+        
+        <div class="contact uk-switcher uk-margin">
+            <a href="mailto:tylerziegelman@gmail.com"><p uk-tooltip="title: Click to Email; pos: bottom">TylerZiegelman@gmail.com</p></a>
+            <p>(701)320-2361</p>
+            
+        </div>
+        
+        </div>
+        
+    </div>
+        
+
+    </div>
+        <div id="about" class="about">
+        <!--- <h1 class="aboutH1">Who Am I?</h1>-->
+            
+        
+                <div class="fun-facts">
+                    <p>Hello, I'm <span>Tyler.</span></p> <p>I own a weirdly long cat, am a die hard Green Bay Packers fan, 
+                    and aspire to backpack the Incan Trail.</p>
+                    <p>My interests are coffee, hiking, guitars, and
+                        pc hardware and games</p>
+                </div>
+                <div class="aboutSVGOverlay">
+                <div class="me-picture"></div>
+                </div>
+        </div>
+        <div id="workExp" class="workExp">
+            <h1 class="workExpH1">Work Experience</h1>
+            <div class="jobs-list">
+        <ul class="workAccordian" uk-accordion>
+            <li>
+            <a class="uk-accordion-title far fa-plus-square" href="#"><h2>Associate in Deliveries at Home Depot</h2></a>
+            <p>Bozeman, MT 12/2017 - present
+                <div class="uk-accordion-content">
+                    - In charge of preparing deliveries
+                <br> - Call customers to arrange delivery times and that orders are correct
+                <br> - Help customers get the right products for their projects
+                </div>
+            </li>
+        </ul>
+        <ul class="workAccordian" uk-accordion>
+            <li>
+            <a class="uk-accordion-title far fa-plus-square" href="#"><h2>Farm Manager at CIR Farms</h2></a>
+            <p>Jamestown, ND 2/2014-10/2017</p>
+                <div class="uk-accordion-content">
+                    - Responsible of day to day operations on a large scale farm
+                <br> - In charge of maintaining farm equipment
+                <br> - Managing time in order to make sure work gets done properly and effieciently
+                <br> - Operating all types of equipment including tractors, semi trucks, skidsteer, and self-propelled sprayer
+                <br> - Use of modern ag technologies and sofware
+                </div>
+            </li>
+        </ul>
+                <div class="educationDiv">
+                    <h2>Education</h2>
+                    <h3>North Dakota State University</h3>
+                    <p>Fargo, ND 8/2010-8/2013</p>
+                </div>
+        </div>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="uk-child-width-1-6@m uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">HTML</h3>
+                        <i class="fab fa-html5 skillsIcon"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">CSS</h3>
+                        <i class="fab fa-css3-alt skillsIcon"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">JavaScript</h3>
+                        <i class="fab fa-js skillsIcon"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Time Management</h3>
+                        <i class="fas fa-hourglass-half skillsIcon"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Sass</h3>
+                        <i class="fab fa-sass skillsIcon"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-hover uk-card-body">
+                        <h3 class="uk-card-title">Git</h3>
+                        <i class="fab fa-git-square skillsIcon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            
+            <div class="footerEmailAndPhoneDiv">
+            <label>Contact:</label>
+                <a href="tel:7013202361">Give me a call</a>
+                <a href="mailto:webmaster@example.com">Reach me by Email</a>
+            </div>
+            <img class="tz-logo"src="images/tz-bg.svg">
+            <div class="footerSocialDiv">
+            <label>See my work:</label>
+                <span class="fab fa-github"><a href="https://github.com/tylerziegelman"> GitHub</a></span>
+                <span class="fab fa-linkedin"><a href="https://www.linkedin.com/in/tyler-ziegelman-115668123"> LinkedIn</a></span>
+            </div>
+            
+        </footer> 
+            <p class="copyright">&copy; Tyler Ziegelman 2018</p>
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </body>
 </html>
