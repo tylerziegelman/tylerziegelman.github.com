@@ -319,6 +319,7 @@ ul {
 .workExp {
     width: 100%;
     background: url('../images/chalkboard.jpg');
+    
 }
 
 .workAccordian{
@@ -487,7 +488,6 @@ footer a:hover {
    
 }
 /**** Media Queries ****/
-
 @media only screen and (max-width: 1665px) {
     .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
         -webkit-transform: scaleX(0.1);
@@ -516,23 +516,38 @@ footer a:hover {
     .uk-offcanvas-bar .uk-button-default {
         margin-left: 75%;
     }
+    .me-picture {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+    .name{
+        font-size: 2em;
+        
+    }
+    .nameWrapper {
+        margin-left: -20px;
+    }
+
+    .contact p {
+        padding-top: -50px;
+    }
 }
 
 @media only screen and (max-height: 420px) {
 	.main-wrapper {
 		height: 100%;
 	}
-	
-
 }
-
 
 @media only screen and (max-height: 605px) {
     .divider {
         display: none;
     }
-	.name-wrapper {
-		margin-top: -100px;
+	.nameWrapper {
+		margin-top: -30px;
     }
     
     .social {

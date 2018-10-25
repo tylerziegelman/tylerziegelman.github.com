@@ -493,6 +493,23 @@ footer a:hover {
   .uk-offcanvas-bar .uk-button-default {
     margin-left: 75%;
   }
+
+  .me-picture {
+    display: none;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .nameWrapper {
+    margin-left: -20px;
+  }
+
+  .contact p {
+    padding-top: -50px;
+  }
 }
 @media only screen and (max-height: 420px) {
   .main-wrapper {
@@ -504,8 +521,8 @@ footer a:hover {
     display: none;
   }
 
-  .name-wrapper {
-    margin-top: -100px;
+  .nameWrapper {
+    margin-top: -30px;
   }
 
   .social {
