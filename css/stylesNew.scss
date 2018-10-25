@@ -96,12 +96,14 @@ html, body {
 }
 
  .uk-offcanvas-bar .uk-nav-primary li a:hover {
-     color: #000;
-     text-shadow: -2px -2px 0px $blue, 2px 2px 0px $red;
+     color: rgba(255,255,255, 0.6);
+    //  text-shadow: -2px -2px 0px $blue, 2px 2px 0px $red;
+    text-shadow: 2.1px 3.8px 0.5px rgba(0,0,0, 0.3);
+     
  }
 
  .uk-offcanvas-bar .uk-nav-primary li a:active {
-     color: #333;
+     color: rgb(255,255,255);
      text-shadow: -2px -2px 2px $blue, 2px 2px 2px $red;
  }
  

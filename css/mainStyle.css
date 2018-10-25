@@ -83,12 +83,12 @@ html, body {
 }
 
 .uk-offcanvas-bar .uk-nav-primary li a:hover {
-  color: #000;
-  text-shadow: -2px -2px 0px #1ebcff, 2px 2px 0px #FF1D5D;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 2.1px 3.8px 0.5px rgba(0, 0, 0, 0.3);
 }
 
 .uk-offcanvas-bar .uk-nav-primary li a:active {
-  color: #333;
+  color: white;
   text-shadow: -2px -2px 2px #1ebcff, 2px 2px 2px #FF1D5D;
 }
 
