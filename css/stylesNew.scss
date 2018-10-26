@@ -295,7 +295,7 @@ ul {
 	background-image: linear-gradient(60deg,$red,$blue);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    //-webkit-animation: hue 1s infinite linear;
+    
     text-shadow: none;
     -webkit-animation: hue 15s ease infinite;
     background-size: 600% 600%;
@@ -487,8 +487,8 @@ footer a:hover {
 
 .skillsIcon {
     font-size: 3em;
-   
 }
+
 /**** Media Queries ****/
 @media only screen and (max-width: 1665px) {
     .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
@@ -510,8 +510,7 @@ footer a:hover {
     .uk-offcanvas-bar .uk-nav-primary li a:hover:before {
         -webkit-transform: scaleX(0.3);
         transform: scaleX(0.3);
-          
-      }
+    }
 }
 
 @media only screen and (max-width: 574px) {
