@@ -1,8 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,700,800,900");
-
-* { margin: 0; padding: 0px; }
-
 html, body {
   height: 100%;
 }
@@ -464,6 +461,30 @@ footer a:hover {
   background: rgba(200, 200, 200, 0.5);
 }
 
+.html:hover {
+  color: #e85738;
+}
+
+.css:hover {
+  color: #2562a8;
+}
+
+.javascript:hover {
+  color: #e8d358;
+}
+
+.time:hover {
+  color: #2cae71;
+}
+
+.sass:hover {
+  color: #c56694;
+}
+
+.git:hover {
+  color: #3b2c04;
+}
+
 .skills .uk-grid > * > :last-child {
   margin-bottom: 50px;
   border: 2px solid black;
@@ -500,41 +521,21 @@ footer a:hover {
   .me-picture {
     display: none;
   }
-  
-  .tz-logo {
-    display: none;
+
+  .fun-facts, .interests {
+    margin-left: 65px;
   }
 
   footer {
     border-top: 2px solid #FF1D5D;
-   
     height: 200px;
-    
     flex-direction: column;
     justify-content: none;
     font-size: 1.3em;
     font-weight: 400;
   }
 
- .footerEmailAndPhoneDiv {
-      margin-top: 40px;
-      width: 100%;
-      padding-left: 0px;
-      text-align: center;
-      margin-bottom: -60px;
-      
-  }
-
-  .footerSocialDiv {
-    padding-left: 0px;
-   
-    
-    width: 100%;
-    text-align: center;
-  }
-  
-
-  .footerEmailAndPhoneDiv label, .footerSocialDiv label {
+  .tz-logo {
     display: none;
   }
 
@@ -542,6 +543,23 @@ footer a:hover {
     margin-top: 0;
   }
 
+  .footerEmailAndPhoneDiv {
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom: -60px;
+  }
+
+  .footerSocialDiv {
+    padding-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer label {
+    display: none;
+  }
 }
 @media only screen and (max-width: 360px) {
   .name {
@@ -586,8 +604,7 @@ footer a:hover {
     margin-top: 70px;
   }
 }
-
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .divider {
     display: none;
   }
@@ -600,8 +617,6 @@ footer a:hover {
     margin-top: 20px;
   }
 
-  
-
   .dividerBottom {
     display: none;
   }
@@ -609,9 +624,10 @@ footer a:hover {
   .contact p {
     margin-top: 70px;
   }
+
   .main-wrapper {
     height: 100%;
   }
-  
 }
+
 /*# sourceMappingURL=mainStyle.css.map */
